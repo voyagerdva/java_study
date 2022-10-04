@@ -1,0 +1,119 @@
+Classfile /E:/__PROJECT__/JAVA/Java_study/out/production/Java_study/ByteCode_004_VisibleZone/Simple.class
+  Last modified 4 окт. 2022 г.; size 634 bytes
+  SHA-256 checksum e9c33e91410359286baa04ad0025f2e4eb7691740a89782b2b22f5fa2ea7321b
+  Compiled from "Simple.java"
+public class ByteCode_004_VisibleZone.Simple
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #19                         // ByteCode_004_VisibleZone/Simple
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Methodref          #14.#15        // java/io/PrintStream.println:(I)V
+  #14 = Class              #16            // java/io/PrintStream
+  #15 = NameAndType        #17:#18        // println:(I)V
+  #16 = Utf8               java/io/PrintStream
+  #17 = Utf8               println
+  #18 = Utf8               (I)V
+  #19 = Class              #20            // ByteCode_004_VisibleZone/Simple
+  #20 = Utf8               ByteCode_004_VisibleZone/Simple
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               LByteCode_004_VisibleZone/Simple;
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               AAA
+  #29 = Utf8               I
+  #30 = Utf8               BBB
+  #31 = Utf8               args
+  #32 = Utf8               [Ljava/lang/String;
+  #33 = Utf8               SourceFile
+  #34 = Utf8               Simple.java
+{
+  public ByteCode_004_VisibleZone.Simple();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LByteCode_004_VisibleZone/Simple;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: bipush        100
+         2: istore_1
+         3: sipush        200
+         6: istore_2
+         7: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        10: iload_2
+        11: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        14: sipush        400
+        17: istore_1
+        18: sipush        500
+        21: istore_2
+        22: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: iload_2
+        26: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        29: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 3
+        line 8: 7
+        line 12: 14
+        line 13: 18
+        line 14: 22
+        line 16: 29
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            3      11     1   AAA   I
+            7       7     2   BBB   I
+           18      11     1   AAA   I
+           22       7     2   BBB   I
+            0      30     0  args   [Ljava/lang/String;
+}
+SourceFile: "Simple.java"
+#############################################################################################
+package ByteCode_004_VisibleZone;
+
+public class Simple {
+    public static void main(String[] args) {
+        {
+            int AAA = 100;
+            int BBB = 200;
+            System.out.println(BBB);
+        }
+
+        {
+            int AAA = 400;
+            int BBB = 500;
+            System.out.println(BBB);
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------
+

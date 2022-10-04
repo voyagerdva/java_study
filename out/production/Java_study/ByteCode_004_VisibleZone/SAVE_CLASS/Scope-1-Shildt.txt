@@ -1,0 +1,144 @@
+Classfile /E:/__PROJECT__/JAVA/Java_study/out/production/Java_study/ByteCode_004_VisibleZone/Scope.class
+  Last modified 4 окт. 2022 г.; size 1168 bytes
+  SHA-256 checksum 9f502931c5e73e3bcd8b7f1fe2c02764aa48674cb05c5d05b5fbdcd833355a24
+  Compiled from "Scope.java"
+public class ByteCode_004_VisibleZone.Scope
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #26                         // ByteCode_004_VisibleZone/Scope
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(II)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(II)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (II)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = InvokeDynamic      #1:#24         // #1:makeConcatWithConstants:(I)Ljava/lang/String;
+  #24 = NameAndType        #15:#25        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #25 = Utf8               (I)Ljava/lang/String;
+  #26 = Class              #27            // ByteCode_004_VisibleZone/Scope
+  #27 = Utf8               ByteCode_004_VisibleZone/Scope
+  #28 = Utf8               Code
+  #29 = Utf8               LineNumberTable
+  #30 = Utf8               LocalVariableTable
+  #31 = Utf8               this
+  #32 = Utf8               LByteCode_004_VisibleZone/Scope;
+  #33 = Utf8               main
+  #34 = Utf8               ([Ljava/lang/String;)V
+  #35 = Utf8               у
+  #36 = Utf8               I
+  #37 = Utf8               args
+  #38 = Utf8               [Ljava/lang/String;
+  #39 = Utf8               х
+  #40 = Utf8               StackMapTable
+  #41 = Utf8               SourceFile
+  #42 = Utf8               Scope.java
+  #43 = Utf8               BootstrapMethods
+  #44 = MethodHandle       6:#45          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #45 = Methodref          #46.#47        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = Class              #48            // java/lang/invoke/StringConcatFactory
+  #47 = NameAndType        #15:#49        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #48 = Utf8               java/lang/invoke/StringConcatFactory
+  #49 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #50 = String             #51            // x и у: \u0001 \u0001
+  #51 = Utf8               x и у: \u0001 \u0001
+  #52 = String             #53            // x равно \u0001
+  #53 = Utf8               x равно \u0001
+  #54 = Utf8               InnerClasses
+  #55 = Class              #56            // java/lang/invoke/MethodHandles$Lookup
+  #56 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #57 = Class              #58            // java/lang/invoke/MethodHandles
+  #58 = Utf8               java/lang/invoke/MethodHandles
+  #59 = Utf8               Lookup
+{
+  public ByteCode_004_VisibleZone.Scope();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LByteCode_004_VisibleZone/Scope;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: bipush        10
+         2: istore_1
+         3: iload_1
+         4: bipush        10
+         6: if_icmpne     29
+         9: bipush        20
+        11: istore_2
+        12: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        15: iload_1
+        16: iload_2
+        17: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(II)Ljava/lang/String;
+        22: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        25: iload_2
+        26: iconst_2
+        27: imul
+        28: istore_1
+        29: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        32: iload_1
+        33: invokedynamic #23,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        38: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        41: return
+      LineNumberTable:
+        line 7: 0
+        line 9: 3
+        line 10: 9
+        line 11: 12
+        line 12: 25
+        line 17: 29
+        line 18: 41
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           12      17     2     у   I
+            0      42     0  args   [Ljava/lang/String;
+            3      39     1     х   I
+      StackMapTable: number_of_entries = 1
+        frame_type = 252 /* append */
+          offset_delta = 29
+          locals = [ int ]
+}
+SourceFile: "Scope.java"
+BootstrapMethods:
+  0: #44 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #50 x и у: \u0001 \u0001
+  1: #44 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #52 x равно \u0001
+InnerClasses:
+  public static final #59= #55 of #57;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+
+---------------------------------------------------------------------------------------------
+
